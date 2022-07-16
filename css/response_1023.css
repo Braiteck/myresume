@@ -1,0 +1,1068 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 16px;
+    }
+
+
+    .content_flex .content,
+    .content_flex.big_side .content
+    {
+        width: 100%;
+
+        order: 2;
+    }
+
+    .content_flex .content.small_offset > * + *
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .mob_scroll > .cont
+    {
+        padding: 0 16px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        display: none;
+
+        margin-bottom: 32px;
+    }
+
+
+    aside.tablet_show
+    {
+        display: block;
+
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+
+    aside .article_author
+    {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    aside .article_author .photo
+    {
+        margin: 0;
+    }
+
+    aside .article_author .photo + *
+    {
+        width: calc(100% - 76px);
+    }
+
+
+
+    aside .links + *
+    {
+        display: none;
+    }
+
+    aside .links .title .icon
+    {
+        color: #37abff;
+    }
+
+
+    aside .links .items
+    {
+        column-gap: 40px;
+        column-count: 2;
+    }
+
+    aside .links .items > *
+    {
+        transform: translateZ(0);
+
+        --webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    aside .links .items > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    aside .links .items .btn
+    {
+        position: relative;
+
+        padding-left: 20px;
+    }
+
+    aside .links .items .btn:before
+    {
+        position: absolute;
+        top: 7px;
+        left: 0;
+
+        display: block;
+
+        width: 8px;
+        height: 8px;
+
+        content: '';
+
+        border-radius: 50%;
+        background: #37abff;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block hr
+    {
+        margin-top: 32px !important;
+        margin-bottom: 32px !important;
+    }
+
+
+    .text_block .s-resume-info
+    {
+        padding: 30px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .bg
+    {
+        width: 160%;
+    }
+
+
+
+    /*---------------
+        How works
+    ---------------*/
+    .how_works .btns .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 32px);
+        margin: 0 -16px;
+        padding: 0 16px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .how_works .btns .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .how_works .btns .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .how_works .btns .row > *
+    {
+        display: inline-block;
+
+        width: auto;
+        max-width: none;
+        margin: 0;
+        padding-bottom: 11px;
+
+        vertical-align: top;
+    }
+
+    .how_works .btns .row > * + *
+    {
+        margin-left: 44px;
+    }
+
+
+    .how_works .swiper-button-next,
+    .how_works .swiper-button-prev
+    {
+        bottom: 0;
+    }
+
+
+    .how_works .item .data
+    {
+        width: 310px;
+        padding-bottom: 80px;
+    }
+
+    .how_works .item .image
+    {
+        max-width: calc(100% - 352px);
+    }
+
+
+
+    /*------------
+        Why us
+    ------------*/
+    .why_us .block_head .title
+    {
+        font-size: 32px;
+    }
+
+    .why_us .block_head .desc
+    {
+        width: 268px;
+    }
+
+    .why_us .block_head .btn
+    {
+        margin-top: 20px;
+    }
+
+
+    .why_us .items .row
+    {
+        margin-bottom: -32px;
+        margin-left: -32px;
+    }
+
+    .why_us .items .row > *
+    {
+        width: calc(50% - 32px);
+        margin-bottom: 32px;
+        margin-left: 32px;
+    }
+
+    .why_us .items .row > *.big_w
+    {
+        width: calc(100% - 32px);
+    }
+
+
+    .why_us .items .item.big_w br
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item .block_head
+    {
+        width: 444px;
+        min-height: 0;
+    }
+
+
+    .advantages .item .image
+    {
+        width: 100%;
+        margin-top: -16px;
+        margin-right: 0;
+        margin-left: 0;
+
+        order: 2;
+    }
+
+    .advantages .item .image img
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .logos .row > *:nth-child(4n) ~ *
+    {
+        display: none;
+    }
+
+
+
+    /*----------
+        Join
+    ----------*/
+    .join .data
+    {
+        padding: 24px 175px 24px 32px;
+    }
+
+
+    .join .block_head
+    {
+        width: calc(100% - 192px);
+        margin: 0;
+    }
+
+
+    .join .image
+    {
+        width: 172px;
+    }
+
+
+    .join .slider1
+    {
+        right: 96px;
+
+        width: 65px;
+    }
+
+    .join .slider2
+    {
+        right: 16px;
+
+        width: 65px;
+    }
+
+
+    .join .swiper-slide
+    {
+        height: 90px !important;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        margin-bottom: 32px;
+        padding: 32px 0 48px;
+    }
+
+
+    .error_info .block_head
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .error_info .block_head .btns
+    {
+        justify-content: center;
+    }
+
+
+    .error_info .image
+    {
+        display: none;
+    }
+
+
+
+    /*---------------------
+        Additional info
+    ---------------------*/
+    .additional_info
+    {
+        margin-bottom: 96px;
+    }
+
+
+    .additional_info .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .additional_info .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .additional_info .row > *.big_w
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*------------------
+        Download now
+    ------------------*/
+    .download_now .row
+    {
+        width: calc(100% + 32px);
+        margin: 8px -16px -24px;
+        padding: 24px 16px;
+    }
+
+
+
+    /*-----------------------
+        Affiliate program
+    -----------------------*/
+    .affiliate_program .head .block_head
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .affiliate_program .head .block_head .title
+    {
+        width: 432px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .affiliate_program .head .block_head .desc
+    {
+        width: 544px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .affiliate_program .head .block_head .btns
+    {
+        justify-content: center;
+    }
+
+
+    .affiliate_program .head .image
+    {
+        width: 100%;
+        margin-top: 48px;
+    }
+
+
+
+    /*-----------
+        Calc
+    -----------*/
+    .calc .data
+    {
+        width: 100%;
+    }
+
+
+    .calc .form
+    {
+        width: 100%;
+    }
+
+
+    .calc .image
+    {
+        width: 100%;
+        margin-top: 48px;
+    }
+
+
+
+    /*-----------
+        Join2
+    -----------*/
+    .join2 .bg
+    {
+        width: 740px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding: 32px 0 24px;
+    }
+
+
+    .about_info .block_head
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .about_info .block_head .desc
+    {
+        width: 585px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .about_info .img
+    {
+        display: none;
+    }
+
+
+    .about_info .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .about_info .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .about_info .row > *.big_w
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*-------------------
+        What we doing
+    -------------------*/
+    .what_we_doing .item .data
+    {
+        width: 444px;
+        min-height: 0;
+    }
+
+
+    .what_we_doing .item .image
+    {
+        width: 100%;
+        margin-top: -16px;
+        margin-right: 0;
+        margin-left: 0;
+
+        order: 2;
+    }
+
+    .what_we_doing .item .image img
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Blog info
+    ---------------*/
+    .blog_info
+    {
+        margin-bottom: 24px;
+        padding: 40px 0 48px;
+    }
+
+
+    .blog_info .data
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .blog_info .block_head
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .blog_info .block_head .desc
+    {
+        width: 586px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .blog_info .search
+    {
+        width: 484px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .blog_info .image
+    {
+        display: none;
+    }
+
+
+
+    /*------------------------
+        Article categories
+    ------------------------*/
+    .article_categories
+    {
+        margin-bottom: 50px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+    .articles .row > *.big
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .content_flex
+    {
+        width: 100%;
+
+        order: 3;
+    }
+
+
+
+    /*--------------------
+        Article author
+    --------------------*/
+    .content .article_author .socials
+    {
+        display: none;
+    }
+
+
+
+    /*----------------------
+        Telegram channel
+    ----------------------*/
+    .content .telegram_channel
+    {
+        padding: 40px;
+    }
+
+
+
+    /*---------------
+        Generator
+    ---------------*/
+    .generator .head
+    {
+        margin-bottom: 48px;
+        padding-bottom: 48px;
+    }
+
+
+    .generator .head .block_head .desc
+    {
+        width: 516px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*------------
+        Skills
+    ------------*/
+    .skills
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .skills .row > *
+    {
+        width: calc(33.333% - 32px);
+    }
+
+
+
+    /*----------------
+        Add skills
+    ----------------*/
+    .add_skills .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .add_skills .col .title
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .add_skills .list
+    {
+        max-height: 515px;
+        padding-right: 16px;
+        padding-bottom: 46px;
+    }
+
+
+    .add_skills .list > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .add_skills .list label
+    {
+        font-size: 18px;
+    }
+
+    .add_skills .list label .name
+    {
+        padding-right: 63px;
+        padding-left: 19px;
+    }
+
+    .add_skills .list label .tooltip
+    {
+        margin-top: 4px;
+    }
+
+
+    .add_skills .show_more
+    {
+        height: 46px;
+    }
+
+    .add_skills .show_more .btn
+    {
+        font-size: 18px;
+    }
+
+
+    .add_skills .example .data
+    {
+        height: 515px;
+        padding: 36px 32px;
+    }
+
+    .add_skills .example img
+    {
+        width: 264px;
+    }
+
+    .add_skills .example .selected
+    {
+        top: 140px;
+        right: 34px;
+
+        width: 132px;
+    }
+
+    .add_skills .example .edit_link
+    {
+        font-weight: 400;
+        line-height: 155%;
+
+        width: 272px;
+        margin-top: 76px;
+        padding: 4px 16px;
+    }
+
+
+    .add_skills .text_block
+    {
+        margin-top: 56px;
+    }
+
+
+
+    /*-----------------
+        Partnership
+    -----------------*/
+    .partnership .bg
+    {
+        display: none;
+    }
+
+
+    .partnership .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .bg
+    {
+        display: none;
+    }
+
+
+    .feedback .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    /*----------------
+        New resume
+    ----------------*/
+    .new_resume .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    /*---------------
+        Templates
+    ---------------*/
+    .templates .cont > .row
+    {
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+
+    .templates .cont > .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+
+
+    /*------------------
+        Example head
+    ------------------*/
+    .example_head .image
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .example_head .data
+    {
+        display: flex;
+        flex-direction: column;
+
+        width: calc(50% - 10px);
+    }
+
+
+    .example_head .data .title
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .example_head .data .text_block
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*---------------------
+        Correct pattern
+    ---------------------*/
+    .correct_pattern
+    {
+        padding: 38px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .data
+    {
+        padding: 23px 31px;
+    }
+
+
+
+    /*------------------------
+        Online constructor
+    ------------------------*/
+    .online_constructor
+    {
+        padding-bottom: 0;
+    }
+
+
+    .online_constructor .block_head
+    {
+        margin-left: 66px;
+    }
+
+
+    .online_constructor .img
+    {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 8px;
+
+        width: auto;
+        margin-top: 56px;
+    }
+
+
+
+    /*--------------
+        Examples
+    --------------*/
+    .examples
+    {
+        padding: 55px 0 461px;
+    }
+
+
+    .examples .block_head
+    {
+        width: 440px;
+        margin-left: 50px;
+    }
+
+
+    .examples .bg
+    {
+        display: none;
+    }
+
+    .examples .tablet_bg
+    {
+        display: block;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 0 64px;
+    }
+
+
+    footer .info
+    {
+        padding: 44px 0 32px;
+    }
+
+    footer .info > *
+    {
+        width: calc(50% - 20px);
+    }
+
+    footer .info > *:nth-child(2) ~ *
+    {
+        margin-top: 40px;
+    }
+
+
+    footer .bottom
+    {
+        padding: 15px 0 24px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

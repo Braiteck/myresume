@@ -1,0 +1,1500 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 272px;
+        --sidebar_width_big: 300px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 96px;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 24px);
+    }
+
+    .content_flex.big_side .content
+    {
+        width: calc(100% - var(--sidebar_width_big) - 24px);
+    }
+
+    .content_flex .content > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .tablet_hide
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .data
+    {
+        padding: 31px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .header_wrap
+    {
+        height: 0 !important;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: -100%;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 56px 0 0;
+
+        transition: transform .3s linear;
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(+100%);
+    }
+
+    header.fixed_show
+    {
+        -webkit-animation: none;
+                animation: none;
+    }
+
+
+    header .mob_scroll > .cont
+    {
+        padding: 0 24px;
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 24px 0 32px;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        overscroll-behavior-y: contain;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .logo,
+    header .create_link
+    {
+        display: none;
+    }
+
+
+    header .menu
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    header .menu_item
+    {
+        width: 100%;
+    }
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+
+    header .menu_item > a
+    {
+        font-weight: 700;
+
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+    header .menu_item > a .icon
+    {
+        position: relative;
+        top: -1px;
+
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        margin-left: 0;
+    }
+
+    header .menu_item > a span
+    {
+        order: 2;
+    }
+
+    header .menu_item > a .icon
+    {
+        transition: transform .2s linear;
+        transform: rotate(-90deg);
+    }
+
+    header .menu_item > a:hover .icon
+    {
+        transform: rotate(180deg);
+    }
+
+
+    header .menu_item > a:after
+    {
+        display: none;
+    }
+
+
+    header .menu_item:hover .sub_menu,
+    header .menu_item .sub_menu,
+    header .menu_item .mob_sub_menu
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        margin: 0;
+        padding: 12px 0 8px 24px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+        border: none;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    header .menu_item .sub_menu:before
+    {
+        display: none;
+    }
+
+
+    header .menu_item > a.touch_link ~ .sub_menu.show
+    {
+        display: none;
+        visibility: visible;
+    }
+
+    header .menu_item > a.touch_link ~ .mob_sub_menu.show
+    {
+        display: block;
+    }
+
+
+    header .sub_menu > * + *
+    {
+        margin-top: 8px;
+    }
+
+    header .sub_menu a
+    {
+        line-height: 140%;
+
+        padding: 0;
+    }
+
+
+    header .account
+    {
+        display: flex;
+
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 0;
+
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    header .account .login_btn,
+    header .account .register_btn
+    {
+        color: #fff;
+        font-size: 18px;
+        line-height: 140%;
+
+        display: block;
+
+        width: calc(50% - 4px);
+        padding: 12px 24px;
+
+        border-radius: 4px;
+        background: linear-gradient(180deg, #50c5ff 0%, #37abff 100%);
+    }
+
+    header .account .register_btn
+    {
+        color: #37abff;
+
+        padding: 11px 23px;
+
+        border: 1px solid;
+        background: none;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header_wrap,
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .create_banner
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    aside .create_banner .desc br
+    {
+        display: none;
+    }
+
+    aside .create_banner .count
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+    .block_head.big_m
+    {
+        margin-bottom: 40px;
+    }
+
+    .block_head.middle_m
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 20px;
+        line-height: 170%;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .text_block * + h2
+    {
+        margin-top: 32px;
+    }
+
+
+    .text_block .s-article-author
+    {
+        padding: 24px 48px;
+    }
+
+
+    .text_block .s-article-tableg th,
+    .text_block .s-article-tabler th
+    {
+        padding: 12px 24px;
+    }
+
+    .text_block .s-article-tableg td,
+    .text_block .s-article-tabler td
+    {
+        padding: 20px 24px 28px;
+    }
+
+
+    .text_block .need_help .icon + * b
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        height: auto;
+        margin-bottom: 56px;
+        padding-top: 40px;
+        padding-bottom: 320px;
+    }
+
+
+    .first_section .desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .first_section .count
+    {
+        margin-top: 16px;
+    }
+
+
+    .first_section .logos > *
+    {
+        width: 104px;
+        height: 48px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 140%;
+
+        transform: translateX(-14%);
+    }
+
+
+
+    /*----------------
+        How works
+    ----------------*/
+    .how_works .swiper-button-next,
+    .how_works .swiper-button-prev
+    {
+        bottom: 92px;
+    }
+
+
+    .how_works .item .data
+    {
+        width: 360px;
+    }
+
+
+    .how_works .item .title
+    {
+        font-size: 32px;
+    }
+
+
+    .how_works .item .image
+    {
+        max-width: calc(100% - 440px);
+    }
+
+
+
+    /*------------
+        Why us
+    ------------*/
+    .why_us
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .why_us .block_head
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .why_us .image
+    {
+        width: calc(50% - 10px);
+        margin-top: 0;
+
+        align-self: center;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        padding: 0 31px;
+    }
+
+
+    .advantages .item .block_head
+    {
+        width: 400px;
+        min-height: 320px;
+        padding: 31px 0;
+    }
+
+
+    .advantages .item .image
+    {
+        width: calc(100% - 452px);
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases
+    {
+        padding-bottom: 48px;
+    }
+
+
+    .cases .slider_wrap
+    {
+        margin-top: 56px;
+        padding: 0;
+    }
+
+    .cases .swiper-button-next,
+    .cases .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .cases .logos
+    {
+        margin-top: 56px;
+    }
+
+
+    .cases .logos .row
+    {
+        margin-left: -40px;
+
+        justify-content: center;
+    }
+
+    .cases .logos .row > *:nth-child(6n) ~ *
+    {
+        display: none;
+    }
+
+    .cases .logos .row > *
+    {
+        margin-left: 40px;
+    }
+
+
+
+    /*----------
+        Join
+    ----------*/
+    .join .data
+    {
+        padding: 24px 200px 24px 32px;
+    }
+
+
+    .join .block_head .btn
+    {
+        margin-top: 32px;
+    }
+
+
+    .join .image
+    {
+        width: 172px;
+    }
+
+
+    .join .slider1
+    {
+        right: 104px;
+
+        width: 72px;
+    }
+
+    .join .slider2
+    {
+        right: 16px;
+
+        width: 72px;
+    }
+
+
+    .join .swiper-slide
+    {
+        height: 104px !important;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .image
+    {
+        width: 360px;
+        margin-right: 40px;
+    }
+
+
+
+    /*---------------------
+        Additional info
+    ---------------------*/
+    .additional_info .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .additional_info .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .additional_info .item .desc br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Download now
+    ------------------*/
+    .download_now
+    {
+        padding-top: 32px;
+
+        text-align: center;
+    }
+
+
+    .download_now .today
+    {
+        font-size: 16px;
+        line-height: 135%;
+
+        display: inline-block;
+
+        margin-bottom: 8px;
+
+        vertical-align: top;
+    }
+
+    .download_now .today:before
+    {
+        top: 4px;
+    }
+
+
+    .download_now .desc
+    {
+        font-size: 20px;
+        line-height: 156%;
+
+        margin-top: 8px;
+    }
+
+
+    .download_now .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 8px -24px -24px;
+        padding: 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .download_now .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .download_now .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .download_now .row > *
+    {
+        display: inline-block;
+
+        width: 352px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .download_now .row > * + *
+    {
+        margin-left: 28px;
+    }
+
+
+
+    /*-----------------------
+        Affiliate program
+    -----------------------*/
+    .affiliate_program .head
+    {
+        margin-bottom: 56px;
+        padding: 40px 0 48px;
+    }
+
+
+    .affiliate_program .head .block_head
+    {
+        width: 440px;
+    }
+
+
+    .affiliate_program .head .image
+    {
+        width: 460px;
+    }
+
+
+
+    .affiliate_program .why .row + .row
+    {
+        margin-top: 24px;
+    }
+
+
+    .affiliate_program .why .data
+    {
+        width: 100%;
+    }
+
+
+    .affiliate_program .why .item
+    {
+        white-space: normal;
+    }
+
+    .affiliate_program .why .item br
+    {
+        display: none;
+    }
+
+
+    .affiliate_program .why .image,
+    .affiliate_program .why .image.image1
+    {
+        width: 100%;
+        margin: 32px auto 0;
+
+        order: 2;
+    }
+
+
+
+    /*-----------
+        Calc
+    -----------*/
+    .calc
+    {
+        margin-bottom: 48px;
+        padding: 40px 0;
+    }
+
+
+    .calc .image
+    {
+        width: 460px;
+        margin-right: 0;
+    }
+
+
+
+    /*-----------
+        Join2
+    -----------*/
+    .join2
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .join2 .data
+    {
+        padding: 55px 71px;
+    }
+
+
+    .join2 .bg
+    {
+        width: 980px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 48px;
+        padding: 40px 0 48px;
+    }
+
+
+    .about_info .block_head
+    {
+        width: 528px;
+    }
+
+
+    .about_info .img
+    {
+        top: 40px;
+        right: 104px;
+    }
+
+
+    .about_info .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .about_info .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .about_info .item
+    {
+        padding: 16px 24px;
+    }
+
+    .about_info .item .desc
+    {
+        margin-top: 4px;
+    }
+
+
+
+    /*-------------------
+        What we doing
+    -------------------*/
+    .what_we_doing
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .what_we_doing .item
+    {
+        padding: 0 31px;
+    }
+
+
+    .what_we_doing .item .data
+    {
+        width: 400px;
+        min-height: 320px;
+        padding: 31px 0;
+    }
+
+
+    .what_we_doing .item .image
+    {
+        width: calc(100% - 400px);
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        margin-bottom: 48px;
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media .swiper-button-next,
+    .media .swiper-button-prev
+    {
+        display: none !important;
+    }
+
+
+    .media .swiper-slide
+    {
+        width: 256px;
+    }
+
+
+
+    /*---------------
+        Blog info
+    ---------------*/
+    .blog_info
+    {
+        padding: 28px 0 32px;
+    }
+
+
+    .blog_info .data
+    {
+        width: 500px;
+    }
+
+
+    .blog_info .image
+    {
+        width: 460px;
+    }
+
+
+
+    /*------------------------
+        Article categories
+    ------------------------*/
+    .article_categories
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .article_categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .article_categories .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .article_categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .article_categories .row > *
+    {
+        display: inline-block;
+
+        width: 180px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .article_categories .row > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 32px;
+    }
+
+    .articles .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+    .articles .row > *.big
+    {
+        width: calc(100% - 24px);
+    }
+
+
+    .articles .article
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+
+    .articles .empty .desc
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------
+        Resumes
+    -------------*/
+    .resumes .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .resumes .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .resumes .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+        padding: 0;
+
+        border: none;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .image
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .article_info .information
+    {
+        margin-top: 20px !important;
+    }
+
+
+
+    /*-------------------
+        Create banner
+    -------------------*/
+    .content .create_banner
+    {
+        padding: 23px 47px 81px 35px;
+    }
+
+
+
+    /*---------------
+        Templates
+    ---------------*/
+    .templates
+    {
+        margin-bottom: 56px;
+        padding: 48px 0;
+    }
+
+
+    .templates .toggle
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .templates .item .select_btn
+    {
+        font-size: 20px;
+
+        bottom: 72px;
+
+        width: 240px;
+        height: 60px;
+    }
+
+
+    .templates .swiper-button-next,
+    .templates .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .templates .cont > .row
+    {
+        margin-bottom: -48px;
+        margin-left: -24px;
+    }
+
+    .templates .cont > .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 48px;
+        margin-left: 24px;
+    }
+
+
+    .templates .cont > .row .item .thumb
+    {
+        padding: 15px 47px 19px 15px;
+    }
+
+
+    .templates .cont > .row .item .colors
+    {
+        top: 16px;
+        right: 14px;
+    }
+
+    .templates .cont > .row .item .colors > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .templates .cont > .row .item .info
+    {
+        padding: 16px 15px 15px;
+    }
+
+
+    .templates .cont > .row .item .name
+    {
+        font-size: 16px;
+    }
+
+    .templates .cont > .row .item .desc
+    {
+        font-size: 16px;
+
+        margin-top: 8px;
+    }
+
+
+    .templates .cont > .row .item .tags,
+    .templates .cont > .row .item .format
+    {
+        margin-top: 12px;
+    }
+
+
+    .templates .cont > .row .item .select_btn
+    {
+        bottom: 20px;
+    }
+
+
+
+    /*----------------------
+        Telegram channel
+    ----------------------*/
+    .content .telegram_channel
+    {
+        padding: 40px 32px;
+    }
+
+
+
+    /*------------
+        Skills
+    ------------*/
+    .add_skills .col
+    {
+        width: calc(50% - 10px);
+    }
+
+
+
+    /*-----------------
+        Partnership
+    -----------------*/
+    .partnership
+    {
+        margin-bottom: 56px;
+        padding-top: 40px;
+    }
+
+    .partnership:before
+    {
+        bottom: 122px;
+
+        height: calc(100% - 121px);
+    }
+
+
+    .partnership .form
+    {
+        width: 640px;
+        padding: 24px 32px 32px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback
+    {
+        margin-bottom: 56px;
+        padding-top: 40px;
+    }
+
+    .feedback:before
+    {
+        bottom: 122px;
+
+        height: calc(100% - 121px);
+    }
+
+
+    .feedback .bg
+    {
+        bottom: 152px;
+    }
+
+
+    .feedback .form
+    {
+        width: 640px;
+        padding: 24px 32px 32px;
+    }
+
+
+
+    /*------------------------
+        Sent success/error
+    ------------------------*/
+    .sent_success .desc,
+    .sent_error .desc
+    {
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+
+
+    /*----------------
+        New resume
+    ----------------*/
+    .new_resume
+    {
+        padding-top: 32px;
+    }
+
+    .new_resume:not(.block)
+    {
+        margin-bottom: 56px;
+    }
+
+    .new_resume:before
+    {
+        top: -58px;
+    }
+
+
+    .new_resume .form
+    {
+        width: 640px;
+        padding: 32px;
+    }
+
+
+    .new_resume .form .block_head .desc
+    {
+        font-size: 22px;
+        line-height: 156%;
+
+        margin-top: 8px;
+    }
+
+
+
+    /*------------------
+        Example head
+    ------------------*/
+    .example_head
+    {
+        margin-bottom: 40px !important;
+        padding-top: 32px;
+    }
+
+
+    .example_head .image
+    {
+        width: 440px;
+    }
+
+
+    .example_head .data
+    {
+        width: calc(100% - 464px);
+        padding-bottom: 9px;
+    }
+
+
+    .example_head .data .title
+    {
+        margin-bottom: 12px;
+    }
+
+
+    .example_head .data .rating
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .example_head .data .tetx_block
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*---------------------
+        Correct pattern
+    ---------------------*/
+    .correct_pattern
+    {
+        padding: 30px;
+    }
+
+
+
+    /*---------------------
+        Categories head
+    ---------------------*/
+    .categories_head
+    {
+        padding-top: 40px;
+    }
+
+
+    .categories_head .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .categories_head .search
+    {
+        margin-bottom: 48px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .links
+    {
+        column-gap: 40px;
+    }
+
+
+
+    /*------------------------
+        Online constructor
+    ------------------------*/
+    .online_constructor
+    {
+        margin-bottom: 76px;
+        padding: 56px 0;
+    }
+
+
+    .online_constructor .block_head
+    {
+        width: 476px;
+    }
+
+    .online_constructor .block_head .desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .online_constructor .img
+    {
+        right: 0;
+
+        width: calc(100% - 524px);
+        max-height: 95%;
+        margin-right: 0;
+    }
+
+
+
+    /*--------------
+        Examples
+    --------------*/
+    .examples
+    {
+        padding: 100px 0;
+    }
+
+
+    .examples .bg
+    {
+        right: -33.333%;
+
+        margin-right: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

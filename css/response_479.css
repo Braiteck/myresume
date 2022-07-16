@@ -1,0 +1,292 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_big: 30px;
+        --font_size_title: 28px;
+        --font_size_title_small: 22px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .label
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .s-resume-info
+    {
+        padding: 14px;
+    }
+
+
+    .text_block .need_help .icon + * b
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .desc br
+    {
+        display: none;
+    }
+
+
+    .first_section .logos > *
+    {
+        width: 100px;
+    }
+
+
+    .first_section .bg
+    {
+        width: 200%;
+    }
+
+
+
+    /*---------------
+        How works
+    ---------------*/
+    .how_works .btns .row > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------
+        Join
+    ----------*/
+    .join .image
+    {
+        width: 145px;
+    }
+
+
+    .join .slider1
+    {
+        right: 89px;
+
+        width: 61px;
+    }
+
+    .join .slider2
+    {
+        right: 14px;
+
+        width: 61px;
+    }
+
+    .join .swiper-slide
+    {
+        height: 87px !important;
+    }
+
+
+    .join .sliders_wrap
+    {
+        height: 236px;
+    }
+
+
+
+    /*-----------------------
+        Affiliate program
+    -----------------------*/
+    .affiliate_program .why .item + .item
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-----------
+        Join2
+    -----------*/
+    .join2 .data
+    {
+        padding: 43px 11px 35px;
+    }
+
+
+
+    /*---------------
+        Blog info
+    ---------------*/
+    .blog_info .search .input
+    {
+        width: 100%;
+    }
+
+    .blog_info .search .submit_btn
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+
+    /*-------------------
+        Create banner
+    -------------------*/
+    .content .create_banner
+    {
+        padding: 23px 15px 79px;
+    }
+
+
+
+    /*--------------------
+        Article author
+    --------------------*/
+    .content .article_author
+    {
+        padding: 15px;
+    }
+
+    .content .article_author .photo + *
+    {
+        width: calc(100% - 80px);
+    }
+
+
+    .content .article_author .desc
+    {
+        width: calc(100% + 80px);
+        margin-left: -80px;
+    }
+
+
+
+    /*---------------
+        Templates
+    ---------------*/
+    .templates .toggle .label br
+    {
+        display: block;
+    }
+
+
+
+    /*------------
+        Skills
+    ------------*/
+    .skills .row
+    {
+        margin-left: 0;
+    }
+
+    .skills .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------
+        Add skills
+    ----------------*/
+    .add_skills .list
+    {
+        max-height: 410px;
+        padding-right: 12px;
+    }
+
+
+    .add_skills .example .data
+    {
+        height: auto;
+        padding: 31px 27px;
+    }
+
+    .add_skills .example img
+    {
+        width: 233px;
+    }
+
+    .add_skills .example .selected
+    {
+        top: 124px;
+        right: 28px;
+
+        width: 130px;
+    }
+
+
+    .add_skills .text_block,
+    .add_skills .suitable_for
+    {
+        margin-top: 32px;
+    }
+
+
+
+    /*------------------------
+        Sent success/error
+    ------------------------*/
+    .sent_success,
+    .sent_error
+    {
+        padding: 80px 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .copyright
+    {
+        width: 100%;
+    }
+
+
+    footer .privacy_policy_link
+    {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal,
+    .modal .tab_content.active
+    {
+        padding: 24px 16px 35px;
+    }
+
+    .modal:before
+    {
+        width: calc(100% + 2px);
+        height: 5px;
+
+        border-radius: 6px 6px 0 0;
+    }
+
+
+
+    #account_modal .exp
+    {
+        display: none;
+    }
+}

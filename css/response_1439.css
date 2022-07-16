@@ -1,0 +1,71 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_big: 44px;
+        --font_size_title: 40px;
+        --font_size_title_small: 35px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .mob_scroll > .cont
+    {
+        padding: 0 32px;
+    }
+
+
+    header .menu
+    {
+        margin-left: 48px;
+    }
+
+
+    header .sub_menu
+    {
+        padding: 40px 0;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 22px;
+    }
+
+
+    .block_head .btn
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*---------------------
+        Additional info
+    ---------------------*/
+    .additional_info .item
+    {
+        padding: 16px 20px;
+    }
+
+
+
+    /*-----------------
+        Fixed share
+    -----------------*/
+    .fixed_share
+    {
+        display: none;
+    }
+}

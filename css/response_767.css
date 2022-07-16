@@ -1,0 +1,2048 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_big: 36px;
+        --font_size_title: 34px;
+        --font_size_title_small: 24px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .content_flex .content > * + *
+    {
+        margin-top: 24px;
+    }
+
+
+    .mob_hide
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 15px 85px 15px 15px;
+    }
+
+    .accordion_item .head .title
+    {
+        font-size: 16px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 15px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu_item + .menu_item
+    {
+        margin-top: 8px;
+    }
+
+
+    header .account .login_btn,
+    header .account .register_btn
+    {
+        width: 100%;
+    }
+
+    header .account .register_btn
+    {
+        margin-top: 8px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside.mob_show
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+    aside.mob_show.no_margin
+    {
+        margin-bottom: 0;
+    }
+
+
+    aside.tablet_show
+    {
+        margin-bottom: 20px;
+    }
+
+
+    aside > * + *,
+    aside > .sticky > * + *
+    {
+        margin-top: 0;
+    }
+
+
+    aside .create_banner,
+    aside .search
+    {
+        display: none;
+    }
+
+
+    aside .mob_choose_categories
+    {
+        display: flex;
+    }
+
+    aside .article_categories
+    {
+        display: none;
+
+        margin-top: 8px;
+    }
+
+
+
+    aside .telegram_channel
+    {
+        position: fixed;
+        z-index: 90;
+        right: 0;
+        bottom: 24px;
+        left: 0;
+
+        width: 288px;
+        margin: auto;
+    }
+
+
+
+    aside .links
+    {
+        border: none;
+        border-radius: 0;
+    }
+
+
+    aside .links .title
+    {
+        font-size: 26px;
+        line-height: 110%;
+
+        padding: 11px 15px;
+
+        border: 1px solid #e9eff3;
+        border-radius: 6px 6px 0 0;
+    }
+
+    aside .links .title span
+    {
+        position: relative;
+        top: 2px;
+    }
+
+
+    aside .links .items
+    {
+        font-size: 16px;
+        line-height: 135%;
+
+        padding: 16px;
+
+        column-gap: 0;
+        column-count: 1;
+    }
+
+    aside .links .items .btn:before
+    {
+        top: 6px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+
+    .breadcrumbs .current
+    {
+        display: inline-block;
+        overflow: hidden;
+
+        width: 160px;
+
+        vertical-align: top;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head,
+    .block_head.middle_m
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .block_head .icon
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .block_head .desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .block_head .btns .btn
+    {
+        width: 100%;
+    }
+
+    .block_head .btns .btn + .btn
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .label
+    {
+        line-height: 140%;
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+    .form .line.hide
+    {
+        display: block;
+    }
+
+
+    .form .field.row
+    {
+        margin-left: 0;
+    }
+
+    .form .field.row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .form .submit
+    {
+        padding-top: 8px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 18px;
+        line-height: 140%;
+
+        width: 100%;
+    }
+
+
+    .form .submit .agree,
+    .form .forgot
+    {
+        width: 100%;
+        margin-top: 24px;
+
+        order: 2;
+    }
+
+
+    .form .soc_auth
+    {
+        margin-top: 51px;
+        padding-top: 28px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 18px;
+        line-height: 156%;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 26px;
+    }
+
+    .text_block h3
+    {
+        font-size: 24px;
+    }
+
+
+    .text_block blockquote
+    {
+        padding: 88px 24px 24px;
+
+        text-align: left;
+    }
+
+
+    .text_block .s-article-author
+    {
+        padding: 24px;
+    }
+
+    .text_block .s-article-author-block
+    {
+        margin-top: 16px;
+    }
+
+
+    .text_block .exampleDivTitle
+    {
+        min-height: 0;
+        padding-top: 48px;
+        padding-left: 0;
+    }
+
+    .text_block .exampleDivContent
+    {
+        margin-top: 8px;
+        padding: 0;
+    }
+
+
+    .text_block .s-article-table1 th,
+    .text_block .s-article-table1 td
+    {
+        padding: 15px;
+    }
+
+
+    .text_block .s-article-tableg th,
+    .text_block .s-article-tabler th,
+    .text_block .s-article-tableg td,
+    .text_block .s-article-tabler td
+    {
+        padding: 12px 16px;
+    }
+
+
+    .text_block .headNumber .headNum
+    {
+        font-size: 20px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+    .text_block .headNumber .headNum + *
+    {
+        width: calc(100% - 48px);
+    }
+
+
+    .text_block ol
+    {
+        padding-left: 0;
+    }
+
+    .text_block ol li:before
+    {
+        top: 2px;
+    }
+
+
+    .text_block .s-resume-info
+    {
+        padding: 22px;
+    }
+
+    .text_block .s-resume-info li + li
+    {
+        margin-top: 16px;
+    }
+
+    .text_block .s-resume-info .tleft,
+    .text_block .s-resume-info .tright
+    {
+        width: 100%;
+    }
+
+
+    .text_block .s-resume-info tr
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+    .text_block .s-resume-info td
+    {
+        display: block;
+
+        width: 100%;
+
+        background: #f8fbfd;
+    }
+
+    .text_block .s-resume-info tr + tr,
+    .text_block .s-resume-info td + td
+    {
+        margin-top: -1px;
+    }
+
+
+    .text_block .s-article-table table
+    {
+        width: 546px;
+    }
+
+    .text_block .s-article-table th
+    {
+        padding: 12px 24px;
+    }
+
+    .text_block .s-article-table td
+    {
+        padding: 24px;
+    }
+
+
+    .text_block .greenDiv,
+    .text_block .redDiv,
+    .text_block .cyanDiv
+    {
+        padding: 24px;
+    }
+
+
+    .text_block .hide
+    {
+        display: none;
+    }
+
+    .text_block .spoler_btn
+    {
+        display: flex;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 40px;
+        padding-top: 32px;
+        padding-bottom: 200px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .first_section .create_link
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*---------------
+        How works
+    ---------------*/
+    .how_works .btns
+    {
+        font-size: 16px;
+    }
+
+
+    .how_works .btns .row
+    {
+        padding-left: 0;
+    }
+
+    .how_works .btns .row > *,
+    .how_works .btns .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+    .how_works .btns .btn:before,
+    .how_works .btns .btn.active:after
+    {
+        width: calc(100% - 16px);
+    }
+
+
+    .how_works .item
+    {
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+
+    .how_works .item .image
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .how_works .item .data
+    {
+        width: 100%;
+        padding-bottom: 64px;
+
+        order: 2;
+    }
+
+
+    .how_works .item .title
+    {
+        font-size: 24px;
+    }
+
+    .how_works .item .desc
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*------------
+        Why us
+    ------------*/
+    .why_us
+    {
+        margin-bottom: 56px;
+    }
+
+
+    .why_us .block_head
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .why_us .block_head .title
+    {
+        font-size: 26px;
+    }
+
+
+    .why_us .block_head .desc
+    {
+        font-size: 20px;
+
+        width: 100%;
+    }
+
+    .why_us .block_head .btn
+    {
+        margin-top: 24px;
+    }
+
+
+    .why_us .image
+    {
+        width: 100%;
+    }
+
+
+    .why_us .items
+    {
+        margin-top: 24px;
+    }
+
+    .why_us .items .row
+    {
+        margin-left: 0;
+    }
+
+    .why_us .items .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .why_us .items .item br
+    {
+        display: none;
+    }
+
+    .why_us .items .desc
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        padding: 0 23px;
+    }
+
+
+    .advantages .item .block_head .title
+    {
+        font-size: 24px;
+    }
+
+    .advantages .item .block_head .desc
+    {
+        font-size: 20px;
+
+        margin-top: 12px;
+    }
+
+    .advantages .item .block_head .btn
+    {
+        width: 100%;
+        margin-top: 16px;
+
+        text-align: center;
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases
+    {
+        padding: 24px 0;
+    }
+
+
+    .cases .slider_wrap
+    {
+        margin-top: 0;
+    }
+
+    .cases .swiper-slide
+    {
+        width: 312px;
+    }
+
+
+    .cases .item
+    {
+        padding: 16px;
+    }
+
+
+    .cases .logos
+    {
+        margin-top: 24px;
+    }
+
+    .cases .logos .row > *
+    {
+        width: calc(50% - 40px);
+    }
+
+
+
+    /*----------
+        Join
+    ----------*/
+    .join .data
+    {
+        padding: 15px;
+    }
+
+
+    .join .block_head
+    {
+        width: 100%;
+    }
+
+    .join .block_head .pre_title
+    {
+        display: none;
+    }
+
+    .join .block_head .title
+    {
+        font-size: 24px;
+    }
+
+    .join .block_head .desc
+    {
+        font-size: 20px;
+
+        width: 100%;
+    }
+
+    .join .block_head .btn
+    {
+        margin-top: 16px;
+    }
+
+
+    .join .image
+    {
+        width: 172px;
+        margin-top: 29px;
+        margin-left: 0;
+    }
+
+
+    .join .sliders_wrap
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        overflow: hidden;
+
+        width: 100%;
+        height: 272px;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*---------------------
+        Additional info
+    ---------------------*/
+    .additional_info
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .additional_info .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+    .additional_info .row > *,
+    .additional_info .row > *.big_w
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Download now
+    ------------------*/
+    .download_now .today
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .download_now .desc
+    {
+        font-size: 20px;
+        line-height: 140%;
+
+        margin-top: 16px;
+    }
+
+
+    .download_now .row > *
+    {
+        width: 310px;
+    }
+
+    .download_now .row > * + *
+    {
+        margin-left: 12px;
+    }
+
+
+
+    /*-----------------------
+        Affiliate program
+    -----------------------*/
+    .affiliate_program .head
+    {
+        margin-bottom: 40px;
+    }
+
+    .affiliate_program .head .image
+    {
+        margin-top: 32px;
+    }
+
+
+
+    .affiliate_program .why .item + .item
+    {
+        margin-top: 20px;
+    }
+
+    .affiliate_program .why .item
+    {
+        font-size: 20px;
+    }
+
+
+    .affiliate_program .why .item .icon
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .affiliate_program .why .item .icon + *
+    {
+        width: calc(100% - 48px);
+    }
+
+
+    .affiliate_program .why .image,
+    .affiliate_program .why .image.image1
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*-----------
+        Calc
+    -----------*/
+    .calc
+    {
+        margin-bottom: 40px;
+        padding: 32px 0;
+    }
+
+
+    .calc .toggle
+    {
+        display: none;
+    }
+
+
+    .calc .image
+    {
+        margin-top: 28px;
+    }
+
+
+
+    /*-----------
+        Join2
+    -----------*/
+    .join2
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .join2 .data
+    {
+        padding: 43px 35px 35px;
+    }
+
+
+    .join2 .block_head .btn
+    {
+        margin-top: 20px;
+    }
+
+
+    .join2 .bg
+    {
+        display: none;
+    }
+
+    .join2 .mob_bg
+    {
+        right: auto;
+        left: -32px;
+
+        display: block;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding: 32px 0;
+    }
+
+
+    .about_info .row
+    {
+        margin-bottom: -16px;
+        margin-left: 0;
+    }
+
+    .about_info .row > *,
+    .about_info .row > *.big_w
+    {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-left: 0;
+    }
+
+
+    .about_info .item
+    {
+        padding: 16px 20px;
+    }
+
+
+
+    /*-------------------
+        What we doing
+    -------------------*/
+    .what_we_doing
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .what_we_doing .item
+    {
+        padding: 0 23px;
+    }
+
+
+    .what_we_doing .item .title
+    {
+        font-size: 24px;
+    }
+
+    .what_we_doing .item .desc
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .history .text_block
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*---------------
+        Blog info
+    ---------------*/
+    .blog_info
+    {
+        padding-bottom: 32px;
+    }
+
+
+    .blog_info .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .blog_info .search .input
+    {
+        font-size: 20px;
+
+        width: calc(100% - 130px);
+        height: 56px;
+        padding: 0 15px;
+    }
+
+    .blog_info .search .submit_btn
+    {
+        font-size: 20px;
+
+        width: 120px;
+        height: 55px;
+    }
+
+
+
+    /*------------------------
+        Article categories
+    ------------------------*/
+    .article_categories
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .block_title
+    {
+        font-size: 24px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .articles .row
+    {
+        margin-bottom: -32px;
+        margin-left: 0;
+    }
+
+    .articles .row > *,
+    .articles .row > *.big
+    {
+        width: 100%;
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+
+
+    .articles .article .category,
+    .articles .article .desc + .category
+    {
+        position: absolute;
+        z-index: 9;
+        top: 16px;
+        left: 16px;
+
+        margin: 0;
+    }
+
+
+    .articles .article .name,
+    .articles .article.big .name
+    {
+        font-size: 24px;
+    }
+
+    .articles .article .desc,
+    .articles .article.big .desc
+    {
+        margin-top: 12px;
+    }
+
+
+
+    .articles .empty .desc
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-------------
+        Resumes
+    -------------*/
+    .resumes .block_title
+    {
+        font-size: 24px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .resumes .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+    .resumes .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info
+    {
+        padding-top: 24px;
+    }
+
+
+    .article_info .article_title
+    {
+        font-size: var(--font_size_title);
+
+        margin-bottom: 20px;
+    }
+
+
+    .article_info .category
+    {
+        margin-bottom: 16px;
+    }
+
+
+
+    /*--------------------
+        Article bottom
+    --------------------*/
+    .article_bottom > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .article_bottom .rating
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .article_bottom .rating .row
+    {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .article_bottom .rating .count
+    {
+        margin-top: 0;
+    }
+
+
+    .article_bottom .share
+    {
+        width: 100%;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+
+    /*-------------------
+        Create banner
+    -------------------*/
+    .content .create_banner .thumb
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .content .create_banner .thumb + *
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    /*--------------------
+        Article author
+    --------------------*/
+    .content .article_author
+    {
+        padding: 19px;
+
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+
+    .content .article_author .photo + *
+    {
+        width: calc(100% - 92px);
+    }
+
+
+    .content .article_author .label
+    {
+        line-height: 135%;
+
+        margin-top: 9px;
+        margin-bottom: 0;
+    }
+
+    .content .article_author .name
+    {
+        line-height: 156%;
+    }
+
+
+    .content .article_author .desc
+    {
+        width: calc(100% + 92px);
+        margin-top: 20px;
+        margin-left: -92px;
+    }
+
+
+
+    /*---------------
+        Templates
+    ---------------*/
+    .templates
+    {
+        padding: 32px 0;
+    }
+
+    .templates.no_bg
+    {
+        padding-top: 24px;
+    }
+
+
+    .templates .block_head
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .templates .toggle
+    {
+        font-size: 20px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .templates .swiper-slide
+    {
+        width: 306px;
+    }
+
+
+    .templates .item .thumb
+    {
+        padding: 15px 47px 19px 15px;
+    }
+
+
+    .templates .item .colors
+    {
+        top: 16px;
+        right: 14px;
+    }
+
+    .templates .item .colors > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .templates .item .info
+    {
+        padding: 16px 15px 15px;
+    }
+
+
+    .templates .item .name
+    {
+        font-size: 16px;
+    }
+
+    .templates .item .desc
+    {
+        font-size: 16px;
+
+        margin-top: 8px;
+    }
+
+
+    .templates .item .tags,
+    .templates .item .format
+    {
+        margin-top: 12px;
+    }
+
+
+    .templates .cont > .row
+    {
+        margin-bottom: -32px;
+        margin-left: 0;
+    }
+
+    .templates .cont > .row > *
+    {
+        width: 100%;
+        margin-bottom: 32px;
+        margin-left: 0;
+    }
+
+
+
+    /*----------------------
+        Related articles
+    ----------------------*/
+    .related_articles .list > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .related_articles .article .thumb
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 59.64%;
+    }
+
+
+    .related_articles .article .thumb + *
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------------
+        Telegram channel
+    ----------------------*/
+    .content .telegram_channel
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Generator
+    ---------------*/
+    .generator .head
+    {
+        margin-bottom: 32px;
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+
+    .generator .head .steps
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .generator .head .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .generator .head .search .input
+    {
+        font-size: 20px;
+
+        width: 100%;
+        height: 55px;
+        padding: 0 15px;
+    }
+
+
+    .generator .head .search .tips
+    {
+        width: 100%;
+    }
+
+    .generator .head .search .tip + .tip
+    {
+        margin-top: 12px;
+    }
+
+
+    .generator .head .search .submit_btn
+    {
+        font-size: 20px;
+
+        width: 100%;
+        height: 55px;
+        margin-top: 12px;
+    }
+
+
+
+    /*------------
+        Skills
+    ------------*/
+    .skills
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .skills .block_title
+    {
+        font-size: 24px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .skills .row > *
+    {
+        width: calc(50% - 32px);
+    }
+
+
+
+    /*----------------
+        Add skills
+    ----------------*/
+    .add_skills .col
+    {
+        width: 100%;
+    }
+
+    .add_skills .col + .col
+    {
+        margin-top: 28px;
+    }
+
+
+    .add_skills .list
+    {
+        max-height: 486px;
+    }
+
+
+    .add_skills .text_block
+    {
+        margin-top: 40px;
+    }
+
+
+
+    .add_skills .suitable_for
+    {
+        flex-wrap: wrap;
+    }
+
+    .add_skills .suitable_for .name
+    {
+        width: 100%;
+        margin-bottom: 16px;
+
+        white-space: normal;
+    }
+
+
+    .add_skills .example .data
+    {
+        border: 1px solid #e9eff3;
+        box-shadow: none;
+    }
+
+
+
+    .add_skills .example .selected
+    {
+        top: 140px;
+        right: 40px;
+
+        width: 178px;
+    }
+
+
+    .add_skills .example .edit_link
+    {
+        margin-top: 72px;
+    }
+
+
+
+    /*-----------------
+        Partnership
+    -----------------*/
+    .partnership .form
+    {
+        padding: 16px 16px 24px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .form
+    {
+        padding: 16px 16px 24px;
+    }
+
+
+
+    /*----------------
+        New resume
+    ----------------*/
+    .new_resume .form
+    {
+        padding: 16px 16px 32px;
+    }
+
+
+    .new_resume .form .block_head
+    {
+        text-align: center;
+    }
+
+    .new_resume .form .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .new_resume .form .skip_btn
+    {
+        margin-top: 24px;
+        margin-right: auto;
+        margin-left: auto;
+
+        order: 2;
+    }
+
+
+    .new_resume .form .soc_auth
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*------------------
+        Example head
+    ------------------*/
+    .example_head
+    {
+        margin-bottom: 32px !important;
+        padding-top: 24px;
+        padding-bottom: 60px;
+    }
+
+
+    .example_head .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .example_head .cont > .rating
+    {
+        display: block;
+    }
+
+
+    .example_head .data
+    {
+        width: 100%;
+        margin-top: 32px;
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    .example_head .data .title
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .example_head .data .rating
+    {
+        display: none;
+    }
+
+    .example_head .data .rating .stars
+    {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+
+        justify-content: center;
+    }
+
+
+    .example_head .data .edit_link
+    {
+        /* position: absolute;
+        z-index: 9;
+        right: 0;
+        bottom: 88px;
+        left: 0;
+        width: 280px;
+        height: 57px;
+        margin: 0 auto; */
+        display: none;
+    }
+
+    /* .example_head .data .edit_link .icon
+    {
+        display: none;
+    } */
+
+
+    .example_head .data .text_block
+    {
+        padding-top: 0;
+    }
+
+
+    .example_head .data .info
+    {
+        font-size: 14px;
+
+        position: absolute;
+        bottom: 12px;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        justify-content: center;
+    }
+
+    .example_head .data .info .icon
+    {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .example_head .image
+    {
+        width: 100%;
+    }
+
+    .example_head .image .edit_link
+    {
+        display: flex;
+    }
+
+
+
+    /*---------------------
+        Correct pattern
+    ---------------------*/
+    .correct_pattern
+    {
+        position: relative;
+
+        padding: 30px 26px 118px;
+    }
+
+
+    .correct_pattern .col
+    {
+        width: 100%;
+    }
+
+    .correct_pattern .col + .col
+    {
+        margin-top: 24px;
+    }
+
+
+    .correct_pattern .title
+    {
+        font-size: 24px;
+
+        text-align: center;
+    }
+
+
+    .correct_pattern .link
+    {
+        position: absolute;
+        right: 0;
+        bottom: 34px;
+        left: 0;
+
+        width: 292px;
+        margin: 0 auto;
+    }
+
+
+
+    /*--------------------
+        Other examples
+    --------------------*/
+    .other_examples
+    {
+        position: relative;
+
+        padding-bottom: 48px;
+    }
+
+
+    .other_examples .head
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .other_examples .all_link
+    {
+        font-size: 20px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+
+    .other_examples .items > * + *
+    {
+        margin-top: 12px;
+    }
+
+    .other_examples .items a
+    {
+        font-size: 20px;
+
+        padding: 15px;
+    }
+
+
+
+    /*---------------------
+        Categories head
+    ---------------------*/
+    .categories_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .categories_head .search
+    {
+        margin-bottom: 40px;
+    }
+
+    .categories_head .search .input
+    {
+        font-size: 20px;
+
+        width: 100%;
+        height: 55px;
+        padding: 0 15px;
+    }
+
+    .categories_head .search .submit_btn
+    {
+        font-size: 20px;
+
+        width: 100%;
+        height: 55px;
+        margin-top: 12px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info
+    {
+        border: none;
+        border-radius: 0;
+    }
+
+
+    .category_info .title
+    {
+        font-size: 26px;
+        line-height: 110%;
+
+        padding: 11px 15px;
+
+        border: 1px solid #e9eff3;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .category_info .title .icon
+    {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+
+    .category_info .title span
+    {
+        position: relative;
+        top: 2px;
+    }
+
+
+    .category_info .data
+    {
+        padding: 16px 0 0;
+    }
+
+
+    .category_info .desc
+    {
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+
+    .category_info .links
+    {
+        font-size: 16px;
+        line-height: 135%;
+
+        margin-top: 16px;
+
+        column-gap: 0;
+        column-count: 1;
+    }
+
+    .category_info .links > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .category_info .links a:before
+    {
+        top: 6px;
+    }
+
+
+
+    /*------------------------
+        Online constructor
+    ------------------------*/
+    .online_constructor
+    {
+        margin-bottom: 54px;
+        padding-top: 32px;
+    }
+
+
+    .online_constructor .block_head
+    {
+        margin-left: 0;
+    }
+
+    .online_constructor .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .online_constructor .img
+    {
+        left: 0;
+
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*--------------
+        Examples
+    --------------*/
+    .examples
+    {
+        padding: 24px 0 298px;
+    }
+
+
+    .examples .block_head
+    {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 8px;
+    }
+
+    .examples .block_head .btn
+    {
+        margin-top: 24px;
+    }
+
+
+    .examples .tablet_bg
+    {
+        width: 824px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 0;
+    }
+
+
+    footer .info
+    {
+        padding: 16px 0;
+    }
+
+    footer .info > *
+    {
+        width: 100%;
+    }
+
+    footer .info > *:nth-child(2) ~ *
+    {
+        margin-top: 0;
+    }
+
+
+    footer .title
+    {
+        margin: 0;
+        padding: 12px 0;
+
+        cursor: pointer;
+    }
+
+    footer .title .icon
+    {
+        display: block;
+    }
+
+    footer .title span
+    {
+        position: relative;
+        top: 1px;
+
+        width: calc(100% - 24px);
+    }
+
+
+    footer .links
+    {
+        border-bottom: 1px solid #2c3c46;
+    }
+
+    footer .links .items
+    {
+        display: none;
+
+        padding-bottom: 15px;
+        padding-left: 24px;
+    }
+
+
+    footer .col_right
+    {
+        margin-top: 16px !important;
+    }
+
+
+    footer .create_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal,
+    .modal .tab_content.active
+    {
+        padding: 24px 24px 35px;
+    }
+
+
+    .modal .bottom
+    {
+        display: none;
+    }
+}
