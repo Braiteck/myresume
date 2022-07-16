@@ -405,7 +405,7 @@ $(() => {
 		if (contentFlex.length && contentFlex.find('.content').outerHeight() > contentFlex.find('aside').outerHeight()) {
 			contentFlex.addClass('stretch')
 
-			$(this).stick_in_parent({
+			contentFlex.find('.will_be_sticky').stick_in_parent({
 				offset_top: 24,
 				recalc_every: 100
 			})

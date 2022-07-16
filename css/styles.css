@@ -2029,7 +2029,7 @@ aside > .will_be_sticky > * + *
 }
 
 
-aside > .sticky.is_stuck
+aside > .will_be_sticky.is_stuck
 {
     margin-top: 0;
 }
