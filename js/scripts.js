@@ -654,7 +654,7 @@ $(window).scroll(() => {
 		? $('.mob_header').addClass('fixed')
 		: $('.mob_header').removeClass('fixed')
 
-	scrollTop > $(window).scrollTop()
+	typeof headerInit !== 'undefined' && scrollTop > $(window).scrollTop()
 		? $('header').addClass('fixed_show')
 		: $('header').removeClass('fixed_show')
 
