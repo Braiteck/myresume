@@ -399,9 +399,17 @@ $(() => {
 
 
 	// Фиксация блока
-	$('.sticky').stick_in_parent({
-		offset_top: 24,
-		recalc_every: 100
+	$('.will_be_sticky').each(function () {
+		let contentFlex = $(this).closest('.content_flex')
+
+		if (contentFlex.length && contentFlex.find('.content').outerHeight() > contentFlex.find('aside').outerHeight()) {
+			contentFlex.addClass('stretch')
+
+			$(this).stick_in_parent({
+				offset_top: 24,
+				recalc_every: 100
+			})
+		}
 	})
 
 

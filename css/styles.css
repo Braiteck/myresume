@@ -351,14 +351,16 @@ button
     position: relative;
 
     justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.content_flex.stretch.row,
+.content_flex.stretch > .cont.row
+{
     align-items: stretch;
     align-content: stretch;
 }
-
-/* .content_flex > *
-{
-    max-width: 100%;
-} */
 
 
 .content_flex .content
@@ -2021,7 +2023,7 @@ aside
 }
 
 aside > * + *,
-aside > .sticky > * + *
+aside > .will_be_sticky > * + *
 {
     margin-top: 24px;
 }
