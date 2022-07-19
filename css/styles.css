@@ -8905,6 +8905,8 @@ aside .telegram_channel .img
     position: relative;
     z-index: 3;
 
+    overflow: hidden;
+
     margin-bottom: 73px;
     padding-top: 37px;
 }
@@ -8983,12 +8985,17 @@ aside .telegram_channel .img
 
     width: 473px;
     max-width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+    box-shadow: 4px 8px 24px rgba(17, 54, 81, .12);
 }
 
 
 .example_head .image img
 {
-    display: block;
+    display: none;
 
     max-width: 100%;
     margin-right: auto;
@@ -8997,8 +9004,6 @@ aside .telegram_channel .img
     border: 1px solid #e9eff3;
     border-bottom: none;
     border-radius: 4px 4px 0 0;
-
-    filter: drop-shadow(4px 8px 24px rgba(17, 54, 81, .12));
 }
 
 
@@ -9151,8 +9156,21 @@ aside .telegram_channel .img
     font-size: 20px;
     line-height: 140%;
 
+    display: flex;
+
+    min-height: 250px;
     margin-top: auto;
     padding-top: 24px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.example_head .data .text_block > *
+{
+    width: 100%;
 }
 
 

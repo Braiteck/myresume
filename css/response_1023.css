@@ -950,6 +950,8 @@
     .example_head .data .text_block
     {
         font-size: 18px;
+
+        min-height: 0;
     }
 
 

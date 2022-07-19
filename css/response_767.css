@@ -1625,6 +1625,17 @@
     }
 
 
+    .example_head .image
+    {
+        background: none !important;
+    }
+
+    .example_head .image img
+    {
+        display: block;
+    }
+
+
     .example_head .data .title
     {
         margin-bottom: 16px;
