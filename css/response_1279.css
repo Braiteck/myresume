@@ -139,9 +139,11 @@
 
 
     header .logo,
-    header .create_link
+    header .create_link,
+    header .choose_plan_link,
+    header .account.tablet_hide
     {
-        display: none;
+        display: none !important;
     }
 
 

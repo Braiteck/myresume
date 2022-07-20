@@ -1960,6 +1960,138 @@ header.fixed_show
 
 
 
+.mob_header .account
+{
+    position: relative;
+
+    display: flex;
+
+    margin-left: auto;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.mob_header .account .user
+{
+    color: #fff;
+    font-family: var(--font_family2);
+    font-size: 17px;
+    line-height: 40px;
+
+    width: 40px;
+    height: 40px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 50%;
+    background: #5fcf81;
+}
+
+
+.mob_header .account .arr
+{
+    color: #37abff;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+
+.mob_header .account .dropdown
+{
+    position: absolute;
+    top: 100%;
+    right: -8px;
+
+    display: none;
+
+    width: 256px;
+    margin-top: 16px;
+    padding: 7px;
+
+    border: 1px solid #e9eff3;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 16px 24px -9px rgba(79, 128, 157, .08);
+}
+
+.mob_header .account .dropdown:before
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 17px;
+
+    content: '';
+}
+
+.mob_header .account:hover .dropdown
+{
+    display: block;
+}
+
+
+.mob_header .account .dropdown a
+{
+    color: var(--text_color);
+    line-height: 155%;
+
+    display: flex;
+
+    padding: 6px 14px;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.mob_header .account .dropdown .icon
+{
+    color: #37abff;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+}
+
+.mob_header .account .dropdown span
+{
+    position: relative;
+    top: 1px;
+
+    width: calc(100% - 24px);
+}
+
+
+.mob_header .account .dropdown a:hover,
+.mob_header .account .dropdown a.active
+{
+    border-color: #37abff;
+    background: #e6f1fb;
+}
+
+
+
 .mob_header .mob_menu_btn
 {
     color: #37abff;
@@ -1968,6 +2100,7 @@ header.fixed_show
 
     width: 24px;
     height: 24px;
+    margin-left: 16px;
 
     justify-content: center;
     align-items: center;
